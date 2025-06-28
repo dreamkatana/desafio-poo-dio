@@ -58,6 +58,18 @@ public class Main {
         System.out.println("Conteúdos Concluidos João:" + devJoao.getConteudosConcluidos());
         System.out.println("XP:" + devJoao.calcularTotalXp());
 
+        Dev devSuper = new Dev();
+        devSuper.setNome("João Super");
+        devSuper.inscreverBootcamp(bootcamp);
+        System.out.println("Conteúdos Inscritos João Super:" + devSuper.getConteudosInscritos());
+        devSuper.progredir();
+        devSuper.progredir();
+        devSuper.progredir();
+        devSuper.progredir();
+        System.out.println("-");
+        System.out.println("Conteúdos Inscritos João Super:" + devSuper.getConteudosInscritos());
+        System.out.println("Conteúdos Concluidos João Super:" + devSuper.getConteudosConcluidos());
+        System.out.println("XP:" + devSuper.calcularTotalXp());
     }
 
 }
